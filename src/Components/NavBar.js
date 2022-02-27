@@ -10,7 +10,8 @@ const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'About', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Updates', href: '#', current: false},
+  { name: 'Contact', href: '#', current: false }
 ]
 
 function classNames(...classes) {
@@ -40,12 +41,12 @@ export default function NavBar() {
                 <div className="flex-shrink-0 flex items-center hover:scale-150 transition duration-300 ease-in-and-out">
                   <a href="#">
                   <img
-                    className="block lg:hidden h-8 w-auto"
+                    className="block lg:hidden h-9 w-auto rounded-md"
                     src={logo}
                     alt="HomePage"
                   />
                   <img
-                    className="hidden lg:block h-8 w-auto"
+                    className="hidden lg:block h-9 w-auto rounded-md"
                     src={logo}
                     alt="HomePage"
                   />
@@ -58,7 +59,7 @@ export default function NavBar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-violet-500 bg-opacity-60 text-white hover:shadow-md hover:shadow-violet-800 hover:scale-110 transition duration-300 ease-in-out' : 'text-gray-200 hover:bg-zinc-700 hover:bg-opacity-70 hover:shadow-violet-800 hover:shadow-md hover:text-white hover:scale-110 transition duration-300 ease-in-out',
+                          item.current ? 'bg-indigo-500 bg-opacity-60 text-white hover:shadow-md hover:shadow-violet-800 hover:scale-110 transition duration-300 ease-in-out' : 'text-gray-200 hover:bg-zinc-700 hover:bg-opacity-70 hover:shadow-violet-800 hover:shadow-md hover:text-white hover:scale-110 transition duration-300 ease-in-out',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}

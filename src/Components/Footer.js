@@ -5,7 +5,7 @@ export default function Footer() {
 
     
     return (
-            <footer className="text-center bg-zinc-800 text-white fixed bottom-0 w-full">
+            <footer className="text-center bg-zinc-800 text-white relative bottom-0 w-full inset-x-0">
                 <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
                 <div className="container pt-2">
                     <div className="w-screen">
@@ -17,7 +17,7 @@ export default function Footer() {
                             transition duration-150 ease-in-out 
                             w-9 h-9 m-1">
 
-                                <svg aria-hidden="true"
+                            <svg aria-hidden="true"
                                 focusable="false"
                                 data-prefix="fab"
                                 data-icon="facebook-f"
@@ -26,10 +26,10 @@ export default function Footer() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 320 512"
                         >
-                            <path
-                            fill="currentColor"
-                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                            ></path>
+                                <path
+                                fill="currentColor"
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                                ></path>
                             </svg>
                         </a>
                         <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-70 hover:ring-4 hover:ring-opacity-70 hover:ring-violet-700 transition duration-150 ease-in-out w-9 h-9 m-1">
