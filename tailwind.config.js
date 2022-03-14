@@ -1,3 +1,5 @@
+//tailwind.config.js
+// eslint-disable-next-line no-undef
 module.exports = {
   mode:'jit',
   purge: ['./src/**/*.{js,jsx}', '.public/index/.html'],
@@ -7,5 +9,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+  ],
 }
