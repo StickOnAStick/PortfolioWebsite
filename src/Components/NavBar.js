@@ -36,8 +36,9 @@ export default function NavBar() {
                   )}
                 </Disclosure.Button>
               </div>
-              {/*NavBrand */}
+              {/*Nav img / links */}
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                {/*Nav Img */}
                 <div className="flex-shrink-0 flex items-center hover:scale-150 transition duration-300 ease-in-and-out">
                   <a href="#">
                   <img
@@ -52,7 +53,8 @@ export default function NavBar() {
                   />
                   </a>
                 </div>
-                <div className="hidden sm:block sm:ml-6">
+                {/*Nav Icons */}
+                <div className="hidden sm:block sm:ml-6 justify-items-end">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
